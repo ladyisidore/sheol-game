@@ -1,0 +1,1 @@
+VAR dressed = true
