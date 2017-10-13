@@ -1,4 +1,5 @@
 === function progress_scene(scene) ===
+~ worldState -= LIST_ALL(Scenes)
 ~ worldState += scene
 
 === function finish_scene(scene) ===

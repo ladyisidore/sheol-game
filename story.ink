@@ -1,5 +1,6 @@
 INCLUDE locations/bedroom.ink
 INCLUDE locations/hallway.ink
+INCLUDE locations/kitchen.ink
 INCLUDE functions/inventory.ink
 INCLUDE functions/fairmaths.ink
 INCLUDE functions/conditions.ink
@@ -10,6 +11,9 @@ INCLUDE values/variables.ink
 
 -> start
 === start ====
+~ progress_scene(bedtime)
+~ change_time(night)
+~ change_weather(clear)
 dripping with the waters of SHEOL #.title
 Lady Isak Grozny #.author
 ECTOCOMP 2017 #.version
@@ -18,6 +22,6 @@ ECTOCOMP 2017 #.version
 
 #.begin
 * [BEGIN]
-~ worldState = (ghost_encounter, clear, night)
-~ forkState = floor
--> bedroom
+Your name is Morgenshtern, Lev Venyaminovich. Except sometimes, you're Lyubov Venyaminovna.
+  * * [ONWARDS]
+  -> bedroom
