@@ -34,7 +34,13 @@ You get into bed.
 = prop
 * {dressed==true} [look in the mirror] You look in the mirror. Your reflection stares back, mournfully.
 You're a young ... well, it gets tricky, there. You live and present as both male and female, depending on your inclination that day. Your precise gender eludes you. Maybe there is no precision for you and your home is in the liminal space between _fairy_ and _transfeminine_.
-Regardless. You're young and painfully thin and sallow. Your red hair falls to your waist in rambunctious waves. You have a long, pointy nose that dominates a narrow, long face. Gray eyes peer suspiciously from behind thick glasses. On your forehead, shining like Czarevna Lebed's star, are three silver eye-spots, eternal reminder that the mother who sired you had been a shoggot, that you are a changeling.
+Regardless. You're young and painfully thin and sallow.
+  * * [look again] Your red hair falls to your waist in rambunctious waves. You have a long, pointy nose that dominates a narrow, long face. Gray eyes peer suspiciously from behind thick glasses. On your forehead, shining like Czarevna Lebed's star, are three silver eye-spots, eternal reminder that the mother who sired you had been a shoggot, that you are a changeling.
+    * * * [and look again] You're wearing an oversized pink cardigan, with purple elbow patches and lilacs embroidered in metallic thread. Your jeans are jeans, to be sure, but they're silver, glittering like the tail of a mermaid. On your feet are blue fluffy slippers with bunny ears and curious, large embroidered eyes.
+    * * * [move on]
+    - - - -> done
+  * * [move on]
+  -> done
 * {forkState ? floor && dressed==true} [pick up the fork] Bracing yourself, you awkwardly crouch down and pick up the fork. Your back, the tendons in your legs, your shoulders all complain, like you're ninety instead of twenty-seven. You straighten and your knees make a horrible crunching sound.
 Absent-mindedly, focusing too much on the pain in your joints, you shove the fork into the pocket of your jeans. You're sure to find it again, at least.
 ~ get(fork, forkState)
