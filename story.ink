@@ -22,6 +22,6 @@ ECTOCOMP 2017 #.version
 
 #.begin
 * [BEGIN]
-Your name is Morgenshtern, Lev Venyaminovich. When the mood takes you, you're Lyubov Venyaminovna.
+Your name is Morgenshtern, Lev Venyaminovich. When the mood takes you, and you're a trans girl rather than an effeminate kind of man with certain predelictions, you go by Lyubov Venyaminovna.
   * * [ONWARDS]
   -> bedroom

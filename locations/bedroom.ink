@@ -8,13 +8,13 @@
   No moon shines. The air is chilly.
 - else:
   {shuffle:
-    - A tarnished mirror stands sentinel just out of reach of the beam. Other bulky shapes loom in the darkness—an ancient <a class='footnote' title='a little too big for the room. By rights it belongs in the master bedroom, which currently houses Anzu's personal library.'>four-poster bed</a>, Anzu's rolltop desk, three mismatched bedside tables. An elderly wardrobe sulks in the corner, one of the doors hanging slightly open, as if the wardrobe's got its shirt untucked. As you walk through the room, your feet tangle in abandoned laundry.
-    - Dust motes dance in the beams. Grime coats the windows. Laundry—yours, Anzu's—carpets the floor, though a space has been cleared in front of the full-length mirror. The rolltop desk gapes open, its surface covered by journals of <a class='footnote' title='Zoology and botany and their thaumoturgical siblings'>natural</a> and <a class='footnote' title='Alchemy. Necromancy.'>unnatural</a> philosophy and at least five mugs containing varying amounts of mouldering tea.
+    - A tarnished mirror stands sentinel just out of reach of the beam. Other bulky shapes loom in the darkness—an ancient <a class="footnote" title="A little too big for the room. By rights it belongs in the master bedroom, which currently houses Anzu's personal library.">four-poster bed</a>, Anzu's rolltop desk, three mismatched bedside tables. An elderly wardrobe sulks in the corner, one of the doors hanging slightly open, as if the wardrobe's got its shirt untucked. As you walk through the room, your feet tangle in abandoned laundry.
+    - Dust motes dance in the beams. Grime coats the windows. Laundry—yours, Anzu’s—carpets the floor, though a space has been cleared in front of the full-length mirror. The rolltop desk gapes open, its surface covered by journals of <a class="footnote" title="Zoology and botany and geology.">natural</a> and <a class="footnote" title="Alchemy. Necromancy. Astronomy. The grisly sciences that delve wrist-deep into the thaumaturgical.">unnatural</a> philosophy and at least five mugs containing varying amounts of mouldering tea.
   }
 }
 {forkState ? floor:<> A lone fork, crusted with the remains of some long-forgotten meal, lies on a patch of miraculously bare carpet, tines pointing up toward the ceiling. A trap for unwary feet.}
-- (events) {picture_frame(): Outside in the hallway, <a class='footnote' title='The love of your life?'>Anzu</a> is fiddling with a picture-frame that he caught hanging crooked. He sounds unhappy.}
-{ghostly_signs():<> Out in the hallway, someone is pacing restlessly. Their tread is unfamiliar to you. Beside you, Anzu sleeps soundly, though his face is twisted, unhappy. -> DONE}
+- (events) {picture_frame(): Outside in the hallway, <a class="footnote" title="The love of your life?">Anzu</a> is fiddling with a picture-frame that he caught hanging crooked. He sounds unhappy.}
+{ghostly_signs():<> Out in the hallway, someone is pacing restlessly. Their tread is unfamiliar to you. Beside you, Anzu sleeps soundly, his face twisted and unhappy. You feel a pang of apprehension, sharp like someone stabbed you in the gut with the business end of a sharpened pencil.-> DONE}
 - (opts)
 <- room(-> bedroom.act, -> opts)
 <- room(-> bedroom.prop, -> opts)
