@@ -18,10 +18,10 @@ dripping with the waters of SHEOL #.title
 Lady Isak Grozny #.author
 ECTOCOMP 2017 #.version
 
-// for Martin C. #.dedication
++ [content warning]
 
 #.begin
 * [BEGIN]
-Your name is Morgenshtern, Lev Venyaminovich. Except sometimes, you're Lyubov Venyaminovna.
+Your name is Morgenshtern, Lev Venyaminovich. When the mood takes you, you're Lyubov Venyaminovna.
   * * [ONWARDS]
   -> bedroom

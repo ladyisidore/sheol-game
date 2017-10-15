@@ -25,25 +25,25 @@ A lone bare lightbulb illuminates a narrow hallway. Dust lies clumped in the cor
 He sees it's only you and, with a stifled cry of anguish, goes limp and falls forward.
 You catch him, just about. He clutches at your waist and makes a forlorn noise in his throat.
   - - (opts_aleph)
-  * * "Are you like okay?"[] you say, bewildered and rather scared. Anzu groans in response, still letting you support most of his weight. His nails dig into the small of your back. "Anya? Anyushka? Are you _okay_?"
-  "Maybe," he finally says, glumly. "You, ah, you scared me, my dove."
-  "I can see that," you mutter. Anzu grimly clings on.
+  * * "Fucking hell, Anya."[] you say, bewildered and rather scared. Anzu groans in response, still letting you support most of his weight. "Are you, like, okay?" His nails dig into the small of your back. "Anya? Anyushka? Are you _okay_?"
+  "Maybe," he finally says, glumly. "You, ah, you _scared me_, my dove."
+  "Nu, I can see that," you snort. Anzu grimly clings on.
   -> opts_aleph
   * * [steady him] You haul him to his feet and, just to be sure, lean him back against the wall. Then, cautiously, you let him go. He remains standing, though he does slide down the wall a little, eyes cast theatrically upwards towards the gray ceiling.
   "You should give one some kind of verbal warning," he mutters, not looking at you, "before you go grabbing one's shoulders." He hoists himself upright and looks up at you, sternly. "I didn't hear you approach, dearest."
-  "Sorry," you mumble. He's <a class='footnote' title='A neurological thing, something about being unable to tune out background noise to better hear the important things. You're like this, too.'>hard of hearing</a>. You know that. You ought to have remembered to be louder. But being loud <a class='footnote' title='You are still convinced you have to take up as little space as possible.'>terrifies</a> you.
+  "Uh, sorry," you mumble. He's <a class='footnote' title='A neurological thing, something about being unable to tune out background noise to better hear the important things. You're like this, too.'>hard of hearing</a>. You know that. You ought to have remembered to be louder. But being loud <a class='footnote' title='You are still convinced you have to take up as little space as possible.'>terrifies</a> you.
     - - - (opts_beit)
     * * * (fret) {not kiss} [fret] You wring your hands.
-    "I didn't mean—" you begin and Anzu rolls his eyes. He takes your wrists and forces your hands apart, untangling your fingers like a fishing line.
+    "Nu, I didn't mean—" you begin and Anzu rolls his eyes. He takes your wrists and forces your hands apart, untangling your fingers like a fishing line.
     "Don't, my dove," he says, softly. "Don't. I love you."
       * * * * [let him] A memory rises up, unbidden—nurses, orderlies, the psych ward. Four-point restraints. But here and now, there is only Anzu wearing his <a class='footnote' title='With a carefully calculated pout, of course, because he is as vain as he is pretty.'>concerned face</a>. You let your hands go limp.
-      "I love you, too," you say, abashed. Anzu strokes your cheek.
+      "Like, I love you, too," you say, abashed. Anzu strokes your cheek.
       ~ raise(trust)
       ~ lower(turmoil)
       * * * * (resist) [resist] A memory surges up, hot and dizzying—nurses, orderlies, the psych ward. Four-point restraits and a pig in uniform forcing your hands apart while you struggled and whimpered, too tired, too scared to scream. You yank your hands away from Anzu and take a few wobbly steps back. He clutches his face
       "I'm sorry, darling," he stammers. His eyes are wide, horrified. "I forgot—"
-      "Don't ... I'm sorry ... I'm sorry ..." you stammer, hugging yourself. "Please don't."
-      "I'm sorry, my dove," he repeats, morosely. "I'm so sorry."
+      "Don't ... I'm sorry ... I'm sorry ..." you stammer, hugging yourself. "Please don't. Oh Moishe in the _desert_, don't ... don't look at me."
+      "I'm sorry, my dove," he repeats, morosely. "I am so, so sorry—"
       ~ lower(trust)
       ~ raise(turmoil)
       - - - - -> opts_beit
@@ -72,11 +72,12 @@ You catch him, just about. He clutches at your waist and makes a forlorn noise i
     * * * []
     -> go_to_bed
     - - - (go_to_bed)
-    * * * [breathe out. breathe in.] "We, um, should go to bed," you say, at length. Anzu is looking at you, {high(trust):dreamily, like you're the best thing he's ever seen|wide-eyed and still apologetic. You {grudge==true:just about stop yourself from scoffing aloud|bite your lip and look down at your hands}}. "'S late. I'm tired?"
+    * * * [breathe out. breathe in.] "We, like, um— we should go to bed?" you say, at length. Anzu is looking at you, {high(trust):dreamily, like you're the best thing he's ever seen|wide-eyed and still apologetic. You {grudge==true:just about stop yourself from scoffing aloud|bite your lip and look down at your hands}}. "'S late. I'm tired?"
     "That's probably a good idea, darling," says Anzu, casting a baleful look at the framed print that is, once again, hanging crooked. His efforts were clearly for naught.
     {grudge == false:You take his hand}
       * * * * [head back to the bedroom]
-      -> done
+      THAT'S ALL SHE WROTE (for now)
+      -> DONE
 * (ghost_meet) {ghostly_sights} [approach the figure]
 - (done) ->->
 
