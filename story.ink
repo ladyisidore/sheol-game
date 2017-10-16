@@ -15,7 +15,7 @@ dripping with the waters of SHEOL #.title
 Lady Isak Grozny #.author
 ECTOCOMP 2017 #.version
 - (top)
-+ [content warning] This game contains use of reclaimed homophobic slurs, depictions of PTSD, internalised homophobia and transphobia, mentions of psychiatric violence and severe mental illness. It is not suitable for minors under the age of 18.
++ [content warning] This game contains use of reclaimed homophobic slurs, depictions of PTSD, internalised homophobia and transphobia, mentions of psychiatric violence and severe mental illness. Further, it contains content of a sexual nature. It is not suitable for minors under the age of 18.
 -> top
 #.begin
 * [PLAY]

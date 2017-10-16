@@ -14,7 +14,7 @@
 }
 {forkState ? floor:<> A lone fork, crusted with the remains of some long-forgotten meal, lies on a patch of miraculously bare carpet, tines pointing up toward the ceiling. A trap for unwary feet.}
 - (events) {picture_frame(): Outside in the hallway, <a class="footnote" title="The love of your life?">Anzu</a> is fiddling with a picture-frame that he caught hanging crooked. He sounds unhappy.}
-{ghostly_signs():<> Out in the hallway, someone is pacing restlessly. Their tread is unfamiliar to you. Beside you, Anzu sleeps soundly, his face twisted and unhappy. You feel a pang of apprehension, sharp like someone stabbed you in the gut with the business end of a sharpened pencil.-> DONE}
+{ghostly_signs():<> Out in the hallway, someone is pacing restlessly. Their tread is unfamiliar to you. Beside you, Anzu sleeps soundly, his face twisted and unhappy. You feel a pang of apprehension, sharp like someone stabbed you in the gut with the business end of a sharpened pencil.}
 - (opts)
 <- room(-> bedroom.act, -> opts)
 <- room(-> bedroom.prop, -> opts)
@@ -48,11 +48,46 @@ Absent-mindedly, focusing too much on the pain in your joints, you shove the for
 
 = talk
 * (anzu_pillow_talk) {pillow_talk()} [you can sleep, now] You settle down to sleep, the aches of the day ambushing you all at once, now that the darkness has hidden all the things that usually hold your attention.
-  * * {grudge==false} [pull Anzu close]
-  * * [turn to the wall]
-  * * [curl up like a cat]
-- After some time spent in silence, enough that you think he must've fallen asleep, Anzu speaks up, his voice thin and needy in the night.
-
+  * * {grudge == false} [pull Anzu close]
+  ~ raise(trust)
+  ~ hold_anzu = true
+  You pull Anzu close to you, wrapping your arms around his waist. He makes an indistinct but clearly pleased noise.
+    - - - (opts_aleph)
+    * * * [kiss him] You kiss the side of his mouth, tenderly, and hear him laugh.
+    "Love you," he mutters, sleepily.
+    ~ raise(trust)
+      * * * * “Love you, too[.”],” you say.
+      * * * * [say nothing] You say nothing, but hold him tighter.
+      - - - - -> opts_aleph
+    * * * [close your eyes] You close your eyes <>
+  * * [turn to the wall] You turn to the wall, away from Anzu <> {grudge==true:You're still mad.}
+  ~ lower(trust)
+  ~ raise(turmoil)
+  * * [curl up like a cat] You curl up like a cat, to maximise warmth <>
+  ~ lower(turmoil)
+  - - and concentrate on blanking your mind. It's not easy. Thoughts, panicked, tangled, random and mundane, line up like soldiers at morning drills and march through your head.
+  After some time spent in silence, enough that you think he must've fallen asleep, Anzu speaks up, his voice thin and needy in the night.
+  "Lyuba? Lyova?"
+  - - (opts_beit)
+  * * {hold_anzu == false && grudge == false} [pull him close] You put your arm around his waist and pull him close, resting your chin on his shoulder.
+  ~ hold_anzu = true
+  -> opts_beit
+  * * “Nu?”[] you say, muzzily. “Something wrong?” {hold_anzu==true:Anzu wriggles in your embrace and|Anzu} turns to face you. Even in the dark, you can see the pain in his expression.
+  “You, ah, don't think of me as a woman, yes?” he says, hesitantly. His voice is pleading. His eyes are open wide, vulnerable and defenceless.
+    - - - (opts_gimel)
+    * * * {grudge == true} [sigh heavily] You sigh heavily. This again. But you can't be cruel to him and withhold an answer just because you're still mad. You still love him, after all.
+    -> opts_gimel
+    * * * [frown in confusion] Doesn't he remember the last time you talked about this? Oh well. You don't mind reassuring him again. After all, you love him.
+    -> opts_gimel
+    * * * [reassure him]
+    “Well, um,” you begin, praying you've chosen the right track. “I'm not attracted to women? I'm attracted to you. So, like, um. I'd say I don't?”
+    He's silent for long enough that you think that's the end of it. Then he makes a small sound, halfway between a sob and a sigh.
+    “Thank you,” he croaks. His plummy upper-class accent is gone, replaced by a harsher, working-class tone that betrays his childhood in the Yisraeli ghettoes of Svet-Dmitrin.
+    {hold_anzu==false:{grudge==true:In spite of yourself, you pull him close.|You pull him close.}|You kiss his temple, gently.}
+    “Don't worry,” you say. “Um. I believe you? I believe you're what you say you are.”
+    “Oh, I know that,” he says, morosely (but sounding posh again). “I don't know if _I_ believe me.” Then he falls silent and remains so.
+    You drift off to sleep.
+    ~ move_story(bedtime, ghost_encounter)
 - (done) ->->
 
 = exits

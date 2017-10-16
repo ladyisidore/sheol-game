@@ -5,8 +5,12 @@
 === function finish_scene(scene) ===
 ~ doneState += scene
 
+=== function move_story(x, y) ===
+~ finish_scene(x)
+~ progress_scene(y)
+
 === function scene_in_progress(scene) ===
-~ return worldState ? scene && doneState !? scene
+~ return worldState ? scene
 
 === function scene_done(scene) ===
 ~ return doneState ? scene
