@@ -21,11 +21,11 @@ A lone bare lightbulb illuminates a narrow hallway. Dust lies clumped in the cor
 - (done) ->->
 
 = talk
-* (anzu_frame) [get Anzu's attention] You clear your throat. Anzu ignores you and goes right on fiddling with the frame. Slightly exasperated, you reach out and put a hand on his shoulder. Anzu twitches in surprise, like he'd startled an electric eel and whirls around, blue eyes wide and wild, right hand raised to call forth flame—
+* (anzu_frame) [get Anzu's attention] You clear your throat. Anzu ignores you and goes right on fiddling with the frame. Figures. Slightly exasperated, you reach out and put a hand on his shoulder. Anzu twitches in surprise, like he'd startled an electric eel by grabbing it around the middle, and whirls around, blue eyes wide and wild, right hand raised to call forth flame—
 He sees it's only you and, with a stifled cry of anguish, goes limp and falls forward.
 You catch him, just about. He clutches at your waist and makes a forlorn noise in his throat.
   - - (opts_aleph)
-  * * "Fucking hell, Anya."[] you say, bewildered and rather scared. Anzu groans in response, still letting you support most of his weight. "Are you, like, okay?" His nails dig into the small of your back. "Anya? Anyushka? Are you _okay_?"
+  * * “Fucking hell, Anya[.”],” you say, bewildered and rather scared. Anzu groans in response, still letting you support most of his weight. “Are you, like, okay?” His nails dig into the small of your back. “Anya? Anyushka? Are you _okay_?”
   "Maybe," he finally says, glumly. "You, ah, you _scared me_, my dove."
   "Nu, I can see that," you snort. Anzu grimly clings on.
   -> opts_aleph
@@ -42,7 +42,7 @@ You catch him, just about. He clutches at your waist and makes a forlorn noise i
       ~ lower(turmoil)
       * * * * (resist) [resist] A memory surges up, hot and dizzying—nurses, orderlies, the psych ward. Four-point restraits and a pig in uniform forcing your hands apart while you struggled and whimpered, too tired, too scared to scream. You yank your hands away from Anzu and take a few wobbly steps back. He clutches his face
       "I'm sorry, darling," he stammers. His eyes are wide, horrified. "I forgot—"
-      "Don't ... I'm sorry ... I'm sorry ..." you stammer, hugging yourself. "Please don't. Oh Moishe in the _desert_, don't ... don't look at me."
+      "Don't ... I'm sorry ... I'm sorry ..." you stammer back, hugging yourself. "Please don't. Oh Moishe in the _desert_, don't ... don't look at me."
       "I'm sorry, my dove," he repeats, morosely. "I am so, so sorry—"
       ~ lower(trust)
       ~ raise(turmoil)
@@ -73,11 +73,10 @@ You catch him, just about. He clutches at your waist and makes a forlorn noise i
     -> go_to_bed
     - - - (go_to_bed)
     * * * [breathe out. breathe in.] "We, like, um— we should go to bed?" you say, at length. Anzu is looking at you, {high(trust):dreamily, like you're the best thing he's ever seen|wide-eyed and still apologetic. You {grudge==true:just about stop yourself from scoffing aloud|bite your lip and look down at your hands}}. "'S late. I'm tired?"
-    "That's probably a good idea, darling," says Anzu, casting a baleful look at the framed print that is, once again, hanging crooked. His efforts were clearly for naught.
+    "You know, that's probably a good idea, darling," says Anzu, casting a baleful look at the framed print that is, once again, hanging crooked. His efforts were clearly for naught.
     {grudge == false:You take his hand}
       * * * * [head back to the bedroom]
-      THAT'S ALL SHE WROTE (for now)
-      -> DONE
+      -> bedroom
 * (ghost_meet) {ghostly_sights} [approach the figure]
 - (done) ->->
 

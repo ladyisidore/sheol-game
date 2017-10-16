@@ -24,3 +24,11 @@
 
 === function ghostly_sights() ===
 ~ return scene_in_progress(ghost_encounter)
+
+=== function HaShem() ===
+{
+  - chumra == true:
+  HaShem
+  - chumra == false:
+  Adonai
+}

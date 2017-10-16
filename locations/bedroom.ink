@@ -24,19 +24,19 @@
 = act
 * {ready_for_bed(1)} [get ready for bed]
 ~ dressed = false
-/*You undress and in deference to the gathering chill outside, put on pajamas. You carefully braid your hair, to keep it from tangling while you sleep, and say the Shema. Anzu busies himself with removing his make-up.
+You undress and in deference to the gathering chill outside, put on pajamas. You carefully braid your hair, to keep it from tangling while you sleep, and say the Shema. Anzu busies himself with removing his make-up. He seems to be avoiding talking to you, which {grudge==true:is rather welcome right now|rather upsets you}.
 You get into bed.
-"Look away, darling," Anzu says. "Give me privacy, nu?" You oblige, turning to look at the wall. Presently, Anzu turns off the light and slips into bed beside you, wearing a truly antique linen night-dress that covers him from neck to ankle. */
+"Look away, darling," Anzu says, tossing the used make-up wipe over his shoulder. "Give me <a class="footnote" title="Anzu never lets you see him in his binder. When you fuck, both of you are partially clothed, but Anzu mostly just undoes a few fastenings and shifts clothes around rather than do anything as revealing as _undress_.">privacy</a>, nu?" You oblige, turning to look at the wall. Presently, Anzu turns off the light and slips into bed beside you, wearing a truly antique linen night-dress that covers him from neck to ankle. It billows out in front, hiding the swell of his chest.
 * {ghostly_signs()} [wake up?] You wake up some time later, quite suddenly. <>
 -> bedroom
 - (done) ->->
 
 = prop
 * {dressed==true} [look in the mirror] You look in the mirror. Your reflection stares back, mournfully.
-You're a young ... well, it gets tricky, there. You live and present as both male and female, depending on your inclination that day. Your precise gender eludes you. Maybe there is no precision for you and your home is in the liminal space between _fairy_ and _transfeminine_.
+You're a young ... well, it gets tricky, there, doesn't it? You live and present as both male and female, depending on your inclination that day. Your precise gender somewhat _eludes_ you. Maybe there is no precision for you and your home is in the liminal space between _fairy_ and _transfeminine_.
 Regardless. You're young and painfully thin and sallow.
   * * [look again] Your red hair falls to your waist in rambunctious waves. You have a long, pointy nose that dominates a narrow, long face. Gray eyes peer suspiciously from behind thick glasses. On your forehead, shining like Czarevna Lebed's star, are three silver eye-spots, eternal reminder that the mother who sired you had been a shoggot, that you are a changeling.
-    * * * [and look again] You're wearing an oversized pink cardigan, with purple elbow patches and lilacs embroidered in metallic thread. Your jeans are jeans, to be sure, but they're silver, glittering like the tail of a mermaid. On your feet are blue fluffy slippers with bunny ears and curious, large embroidered eyes.
+    * * * [and look again] You're wearing an oversized pink cardigan, with purple elbow patches and lilacs embroidered in metallic thread. Your jeans are jeans, to be sure, but they're silver, glittering like the tail of a mermaid. On your feet are blue fluffy slippers with bunny ears and large, curious eyes embroidered close to the toe.
     * * * [move on]
     - - - -> done
   * * [move on]
@@ -47,17 +47,12 @@ Absent-mindedly, focusing too much on the pain in your joints, you shove the for
 - (done) ->->
 
 = talk
-/* * (anzu_pillow_talk) {pillow_talk()} [you can sleep, now] You settle down into a comfortable position and pull Anzu close. He clings.
-  * * "Um. Are you okay?"[] you say. You know the answer, you realise with a sinking heart.
-  "No," says Anzu, faintly. "It's ... oh, it's stupid, darling. Never mind. Sleep."
-  "Um, like, if you're sure?" you say. He nods. You kiss his nose. "Um. Try to sleep well? I love you."
-  "I love you too," he says, and he sounds rueful. "Good night."
-  * * [kiss him goodnight] You kiss him, once on the mouth and once on the temple.
-  "Love you," you say. "G'night." He mutters something back and then sighs.
-  "Good night, darling," he says, his voice peculiarly heavy. "I love you, too."
-  - - Anzu drifts off to sleep and, in time, so do you.
-  ~ finish_scene(bedtime)
-  ~ progress_scene(ghost_encounter) */
+* (anzu_pillow_talk) {pillow_talk()} [you can sleep, now] You settle down to sleep, the aches of the day ambushing you all at once, now that the darkness has hidden all the things that usually hold your attention.
+  * * {grudge==false} [pull Anzu close]
+  * * [turn to the wall]
+  * * [curl up like a cat]
+- After some time spent in silence, enough that you think he must've fallen asleep, Anzu speaks up, his voice thin and needy in the night.
+
 - (done) ->->
 
 = exits

@@ -21,7 +21,12 @@ ECTOCOMP 2017 #.version
 + [content warning]
 
 #.begin
-* [BEGIN]
-Your name is Morgenshtern, Lev Venyaminovich. When the mood takes you, and you're a trans girl rather than an effeminate kind of man with certain predelictions, you go by Lyubov Venyaminovna.
+* [PLAY]
+Do you prefer the Name of God be censored/substituted?
+  * * [YES]
+  ~ chumra = true
+  * * [NO]
+  ~ chumbra = false
+- Your name is Morgenshtern, Lev Venyaminovich. (When the mood takes you, and you're a trans girl rather than an effeminate kind of man with certain <a class="footnote" title="To put it bluntly: you're a faggot and you know it. And so does anyone who looks at you.">predelictions</a>, you go by Lyubov Venyaminovna.) You live in <a class="footnote" title="The capital city of Imperial Vsemlada.">Svet-Dmitrin</a>.
   * * [ONWARDS]
   -> bedroom
