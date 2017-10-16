@@ -22,6 +22,9 @@
 === function ghostly_signs() ===
 ~ return scene_in_progress(ghost_encounter) && not hallway.talk.ghost_meet
 
+=== function go_see_ghost() ===
+~ return scene_in_progress(ghost_encounter) && bedroom.act.wake_up && not hallway.talk.ghost_meet
+
 === function ghostly_sights() ===
 ~ return scene_in_progress(ghost_encounter)
 

@@ -19,16 +19,20 @@
 <- room(-> bedroom.act, -> opts)
 <- room(-> bedroom.prop, -> opts)
 <- dialogue(-> bedroom.talk, -> opts)
-<- exits
+// <- exits
 
 = act
 * {ready_for_bed(1)} [get ready for bed]
 ~ dressed = false
 You undress and in deference to the gathering chill outside, put on pajamas. You carefully braid your hair, to keep it from tangling while you sleep, and say the Shema. Anzu busies himself with removing his make-up. He seems to be avoiding talking to you, which {grudge==true:is rather welcome right now|rather upsets you}.
 You get into bed.
-"Look away, darling," Anzu says, tossing the used make-up wipe over his shoulder. "Give me <a class="footnote" title="Anzu never lets you see him in his binder. When you fuck, both of you are partially clothed, but Anzu mostly just undoes a few fastenings and shifts clothes around rather than do anything as revealing as _undress_.">privacy</a>, nu?" You oblige, turning to look at the wall. Presently, Anzu turns off the light and slips into bed beside you, wearing a truly antique linen night-dress that covers him from neck to ankle. It billows out in front, hiding the swell of his chest.
-* {ghostly_signs()} [wake up?] You wake up some time later, quite suddenly. <>
+"Look away, darling," Anzu says, tossing the used make-up wipe over his shoulder. “Give me <a class="footnote" title="Anzu never lets you see him in his binder. When you fuck, both of you are partially clothed, but Anzu mostly just undoes a few fastenings and shifts clothes around rather than do anything as revealing as undress.">privacy</a>, nu?” You oblige, turning to look at the wall. Presently, Anzu turns off the light and slips into bed beside you, wearing a truly antique linen night-dress that covers him from neck to ankle. It billows out in front, hiding the swell of his chest.
+* {picture_frame()} [go check up on anzu]
+-> hallway
+* (wake_up) {ghostly_signs()} [wake up?] You wake up some time later, quite suddenly. <>
 -> bedroom
+* (see_who) {go_see_ghost()} [go see who it is] You slip out of bed, careful to not wake Anzu, and head out to the hallway.
+-> hallway
 - (done) ->->
 
 = prop
@@ -85,7 +89,7 @@ Absent-mindedly, focusing too much on the pain in your joints, you shove the for
     “Thank you,” he croaks. His plummy upper-class accent is gone, replaced by a harsher, working-class tone that betrays his childhood in the Yisraeli ghettoes of Svet-Dmitrin.
     {hold_anzu==false:{grudge==true:In spite of yourself, you pull him close.|You pull him close.}|You kiss his temple, gently.}
     “Don't worry,” you say. “Um. I believe you? I believe you're what you say you are.”
-    “Oh, I know that,” he says, morosely (but sounding posh again). “I don't know if _I_ believe me.” Then he falls silent and remains so.
+    “Oh, I know that,” he says, morosely (but sounding posh again). “I don't know if I believe me.” Then he falls silent and remains so.
     You drift off to sleep.
     ~ move_story(bedtime, ghost_encounter)
 - (done) ->->
@@ -95,3 +99,4 @@ Absent-mindedly, focusing too much on the pain in your joints, you shove the for
 + [EXITS]
   #.choice__submenu
   + + (to_hallway) [TO HALLWAY] -> hallway
+- ->->

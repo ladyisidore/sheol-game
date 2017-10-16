@@ -1,11 +1,12 @@
 === hallway ===
 A lone bare lightbulb illuminates a narrow hallway. Dust lies clumped in the corners. The carpet is threadbare. It's a sort of ugly, dirty beige, having faded with the years.
 {picture_frame():<> Anzu stands in front of a lithograph of a complicated necromantic diagram, trying in vain to stop it from hanging crooked.}
+{ghostly_sights(): <> Someone stands at the far end. Someone in a white nightdress. Someone see-through.}
 - (opts)
 // <- room(-> prop, -> opts)
 <- room(-> act, -> opts)
 <- dialogue(-> talk, -> opts)
-<- exits
+// <- exits
 
 = act
 * {not anzu_frame} [examine Anzu] Anzu Tamiratovich Menelik, a good foot shorter than you, totters on high heels. He looks younger than his thirty-three years; his dark brown skin is smooth and carefully-applied foundation hides any blemishes. Violet eyeshadow shimmers in deep sockets. He wears his hair longish, straightened with a hot-comb and secured into lazy waves with peach pomade.
@@ -31,7 +32,7 @@ You catch him, just about. He clutches at your waist and makes a forlorn noise i
   -> opts_aleph
   * * [steady him] You haul him to his feet and, just to be sure, lean him back against the wall. Then, cautiously, you let him go. He remains standing, though he does slide down the wall a little, eyes cast theatrically upwards towards the gray ceiling.
   "You should give one some kind of verbal warning," he mutters, not looking at you, "before you go grabbing one's shoulders." He hoists himself upright and looks up at you, sternly. "I didn't hear you approach, dearest."
-  "Uh, sorry," you mumble. He's <a class='footnote' title='A neurological thing, something about being unable to tune out background noise to better hear the important things. You're like this, too.'>hard of hearing</a>. You know that. You ought to have remembered to be louder. But being loud <a class='footnote' title='You are still convinced you have to take up as little space as possible.'>terrifies</a> you.
+  "Uh, sorry," you mumble. He's <a class='footnote' title='A neurological thing, something about being unable to tune out background noise to better hear the important things. You’re like this, too.'>hard of hearing</a>. You know that. You ought to have remembered to be louder. But being loud <a class='footnote' title='You are still convinced you have to take up as little space as possible.'>terrifies</a> you.
     - - - (opts_beit)
     * * * (fret) {not kiss} [fret] You wring your hands.
     "Nu, I didn't mean—" you begin and Anzu rolls his eyes. He takes your wrists and forces your hands apart, untangling your fingers like a fishing line.
@@ -69,8 +70,7 @@ You catch him, just about. He clutches at your waist and makes a forlorn noise i
     ~ grudge = true
     ~ raise(turmoil)
     ~ lower(trust)
-    * * * []
-    -> go_to_bed
+    * * * [] -> go_to_bed
     - - - (go_to_bed)
     * * * [breathe out. breathe in.] "We, like, um— we should go to bed?" you say, at length. Anzu is looking at you, {high(trust):dreamily, like you're the best thing he's ever seen|wide-eyed and still apologetic. You {grudge==true:just about stop yourself from scoffing aloud|bite your lip and look down at your hands}}. "'S late. I'm tired?"
     "You know, that's probably a good idea, darling," says Anzu, casting a baleful look at the framed print that is, once again, hanging crooked. His efforts were clearly for naught.
