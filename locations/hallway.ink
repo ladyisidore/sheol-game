@@ -97,6 +97,8 @@ You catch him, just about. He clutches at your waist and makes a forlorn noise i
     “Ah, but everyone says that!” says the girl, morosely. There's something naggingly familiar about her, but her face is too blurred and phantasmal for you to be sure. But there's something about the way she talks ...
     “Um, I mean it, though?” you say. She snorts.
     “You would hurt me,” she says. “If ... if you knew my real name.” Before you can question that, she disappears, taking the chill with her.
+    ~ change_time(morning)
+    ~ change_weather(foggy)
     ~ move_story(ghost_encounter, talk_to_mogila)
     -> kitchen
 - (done) ->->

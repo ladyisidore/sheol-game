@@ -28,4 +28,6 @@
 * [take your meds] You pick up your glass of water, <a class='footnote' title="L'chaim!">toast</a> Mogila with it and swallow the handful of pills all at once, only gagging at little. The duloxetine capsules are a little too big for your throat. As soon as that thought occurs to you, several ways to take it in a filthy kind of way do too and you fight not to blush. You'd have to explain then and that's more embarrassing than having such odd thoughts in the first place.
   * * [go back upstairs] It's always nice to see Mogila, to talk to her, to keep the friendship burning like a Yahrzeit candle. But you're fragile these days, easily exhausted. You bid Mogila good day and disappear upstairs.
     * * * [Anzu is waiting for you]
+    ~ move_story(talk_to_mogila, talk_to_anzu)
     -> bedroom
+- (done) ->->
