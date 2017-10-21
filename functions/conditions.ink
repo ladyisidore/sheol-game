@@ -2,7 +2,10 @@
 ~ return worldState ? clear && worldState ? afternoon
 
 === function moonlit() ===
-~ return worldState ? clear && worldState ? night
+~ return worldState ? clear && worldState ? night && worldState !? ghost_encounter
+
+=== function no_moon() ===
+~ return worldState ? clear && worldState ? night && worldState ? ghost_encounter
 
 === function picture_frame() ===
 ~ return scene_in_progress(bedtime) && check_time(night) && not hallway.talk.anzu_frame
@@ -26,7 +29,13 @@
 ~ return scene_in_progress(ghost_encounter) && bedroom.act.wake_up && not hallway.talk.ghost_meet
 
 === function ghostly_sights() ===
-~ return scene_in_progress(ghost_encounter)
+~ return scene_in_progress(ghost_encounter) && not hallway.talk.ghost_meet
+
+=== function ghost_done() ===
+~ return scene_in_progress(ghost_encounter) && hallway.talk.ghost_meet
+
+=== function after_ghost_morning() ===
+~ return scene_in_progress(talk_to_mogila) && kitchen.talk.mogila_ghost
 
 === function HaShem() ===
 {

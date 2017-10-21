@@ -1,11 +1,10 @@
 === bedroom ===
 {moonlit():Moonlight seeps in through a gap in the curtains, filtered by the dirty glass of the windows.} <>
 {sunny():Sunlight floods the room.} <>
+{no_moon(): No moon shines. The air is chilly.}
 {
 - scene_in_progress(bedtime) && hallway.talk.anzu_frame:
   It illuminates the dire need for a through cleaning. Or perhaps a flamethrower.
-- scene_in_progress(ghost_encounter):
-  No moon shines. The air is chilly.
 - else:
   {shuffle:
     - A tarnished mirror stands sentinel just out of reach of the beam. Other bulky shapes loom in the darkness—an ancient <a class="footnote" title="A little too big for the room. By rights it belongs in the master bedroom, which currently houses Anzu's personal library.">four-poster bed</a>, Anzu's rolltop desk, three mismatched bedside tables. An elderly wardrobe sulks in the corner, one of the doors hanging slightly open, as if the wardrobe's got its shirt untucked. As you walk through the room, your feet tangle in abandoned laundry.
@@ -89,7 +88,7 @@ Absent-mindedly, focusing too much on the pain in your joints, you shove the for
     “Thank you,” he croaks. His plummy upper-class accent is gone, replaced by a harsher, working-class tone that betrays his childhood in the Yisraeli ghettoes of Svet-Dmitrin.
     {hold_anzu==false:{grudge==true:In spite of yourself, you pull him close.|You pull him close.}|You kiss his temple, gently.}
     “Don't worry,” you say. “Um. I believe you? I believe you're what you say you are.”
-    “Oh, I know that,” he says, morosely (but sounding posh again). “I don't know if I believe me.” Then he falls silent and remains so.
+    “Oh, I know that,” he says, morosely (but sounding posh again). “I don't know if <em>I</em> believe me.” Then he falls silent and remains so.
     You drift off to sleep.
     ~ move_story(bedtime, ghost_encounter)
 - (done) ->->
@@ -98,5 +97,6 @@ Absent-mindedly, focusing too much on the pain in your joints, you shove the for
 #.choice
 + [EXITS]
   #.choice__submenu
-  + + (to_hallway) [TO HALLWAY] -> hallway
+  + + (to_hallway) [TO HALLWAY]
+  -> hallway
 - ->->

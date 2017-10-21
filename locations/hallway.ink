@@ -1,7 +1,10 @@
 === hallway ===
 A lone bare lightbulb illuminates a narrow hallway. Dust lies clumped in the corners. The carpet is threadbare. It's a sort of ugly, dirty beige, having faded with the years.
 {picture_frame():<> Anzu stands in front of a lithograph of a complicated necromantic diagram, trying in vain to stop it from hanging crooked.}
-{ghostly_sights(): <> Someone stands at the far end. Someone in a white nightdress. Someone see-through.}
+{ghostly_sights():
+  <> You can see your breath mist in front of you. Someone stands at the far end of the hallway. Someone in a white nightdress. Someone see-through.
+  Strange, but you aren't frightened. Much. You feel as though in a dream, where rational things like fear don't exist quite the same way, if they do at all.
+}
 - (opts)
 // <- room(-> prop, -> opts)
 <- room(-> act, -> opts)
@@ -11,11 +14,13 @@ A lone bare lightbulb illuminates a narrow hallway. Dust lies clumped in the cor
 = act
 * {not anzu_frame} [examine Anzu] Anzu Tamiratovich Menelik, a good foot shorter than you, totters on high heels. He looks younger than his thirty-three years; his dark brown skin is smooth and carefully-applied foundation hides any blemishes. Violet eyeshadow shimmers in deep sockets. He wears his hair longish, straightened with a hot-comb and secured into lazy waves with peach pomade.
   * * [look again] His eyes are bright blue, the colour of magic. Each sharp cheekbone bears two eye-spots of that same eye-burning colour, with two more between his carefully-plucked eyebrows. He, too, is a changeling, the great-grandson of a shoggot Hive-Queen. His nose juts forward proudly, like the prow of an Ormic longboat. His full lips are painted blue, to match his eyes.
-    * * * [and look again] It's late night and the two of you had spent the evening at home, but he's still dolled up in sequins and spandex and taffeta in metallic hues. High-waisted trousers cling tight; a corset hugs the violin curve of his torso. Around his neck, a blindingly white cravat is secured with a death's-head pin.
+    * * * [and look again] It's late night and the two of you had spent the evening at home, but he's still dolled up in sequins and spandex and taffeta in metallic hues. High-waisted trousers cling tight; a corset hugs the violin curve of his torso. Around his neck, a blindingly white cravat is secured with a death's-head pin. His nails are long, and painted silver.
     * * * [move on]
     - - - -> done
   * * [move on]
   -> done
+* {ghost_done()} [head back to bed] Confused and still shivering, you head back to bed.
+~ move_story(ghost_encounter, talk_to_mogila)
 - (done) ->->
 
 = prop
@@ -77,7 +82,23 @@ You catch him, just about. He clutches at your waist and makes a forlorn noise i
     {grudge == false:You take his hand}
       * * * * [head back to the bedroom]
       -> bedroom
-* (ghost_meet) {ghostly_sights} [approach the figure]
+* (ghost_meet) {ghostly_sights()} [approach the figure] You take a few tentative steps forward. The ghostly figure turns around.
+“Shema, Yisrael,” you whisper—
+“{HaShem()} elohaynu. {HaShem()} ehad,” you and the figure say together. You relax and take a couple more steps forward. The figure covers their face with both hands.
+  * * “Hey, um, it's okay?”[] <>
+  * * (ghost_name) “Who ... um, who are you?”[] <>
+  you say, peering closely at the figure. It's a girl, about thirteen or fourteen. Her hair is in waist-long dreadlocks and her nails are long and painted a shimmery silver. She takes her hands away from her face and looks at you, tearfully.
+  “{ghost_name:Irina,|Is it?}” she says, faintly. "Who ... who are you?"
+  You consider your options.
+    * * * “Lyuba Morgenshtern[.”],” <>
+    * * * ”Lyova Morgenshtern[.”],” <>
+    * * * “A friend?”[] <>
+    - - - you say, hesitantly. “I won't hurt you.”
+    “Ah, but everyone says that!” says the girl, morosely. There's something naggingly familiar about her, but her face is too blurred and phantasmal for you to be sure. But there's something about the way she talks ...
+    “Um, I mean it, though?” you say. She snorts.
+    “You would hurt me,” she says. “If ... if you knew my real name.” Before you can question that, she disappears, taking the chill with her.
+    ~ move_story(ghost_encounter, talk_to_mogila)
+    -> kitchen
 - (done) ->->
 
 
